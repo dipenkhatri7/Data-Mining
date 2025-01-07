@@ -66,9 +66,9 @@ def main(dataset_type: str, model_type: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run heart disease and diabetes prediction analysis')
-    parser.add_argument('--dataset', choices=['heart', 'diabetes'], required=True,
+    parser.add_argument('--dataset', choices=['heart', 'diabetes'],
                       help='Dataset to use for analysis')
-    parser.add_argument('--model', choices=list(config.MODEL_CONFIGS.keys()), required=True,
+    parser.add_argument('--model', choices=list(config.MODEL_CONFIGS.keys()),
                       help='Model type to use for prediction')
     parser.add_argument('--run-notebooks', action='store_true',
                       help='Execute Jupyter notebooks programmatically')
